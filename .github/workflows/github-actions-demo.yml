@@ -18,11 +18,12 @@ jobs:
       - name: Output triggered event
         run: |
             echo "Triggered event: ${GITHUB_EVENT_NAME}"
-
       - name: Output current branch
         run: |
               echo "Current branch: ${GITHUB_HEAD_REF}"
-              
+      - name: checkout repository
+        uses: ctions/checkout@v6.0.2
+        
       - name: List files
         run: |
           ls -R | grep -v / | sort
