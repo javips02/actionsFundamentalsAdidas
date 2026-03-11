@@ -22,10 +22,7 @@ jobs:
       - name: Output current branch
         run: |
               echo "Current branch: ${GITHUB_HEAD_REF}"
-
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
+              
       - name: List files
         run: |
           ls -R | grep -v / | sort
