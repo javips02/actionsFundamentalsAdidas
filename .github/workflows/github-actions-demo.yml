@@ -22,7 +22,7 @@ jobs:
         run: |
               echo "Current branch: ${GITHUB_HEAD_REF}"
       - name: checkout repository
-        uses: ctions/checkout@v6.0.2
+        uses: actions/checkout@v6.0.2
         
       - name: List files
         run: |
